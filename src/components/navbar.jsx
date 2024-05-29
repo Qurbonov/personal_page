@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="md:hidden lg:flex  justify-center">
         <Link
           href="/"
-          className="text-sm bg-sky-800 rounded-md p-2 font-semibold tracking-widestk"
+          className="text-sm bg-sky-800 rounded-md p-3 font-semibold tracking-widestk"
         >
           <span className="text-white mr-1">Qurbonov </span>
           <span className="w-12 h-8 rounded bg-white text-black mr-1 p-1">

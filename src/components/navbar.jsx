@@ -30,7 +30,7 @@ const Navbar = () => {
         >
           <span className="text-white mr-1">Qurbonov </span>
           <span className="w-12 h-8 rounded bg-white text-black mr-1 p-1">
-            Po'latjon
+            Po&apos;latjon
           </span>
           <span className="text-white ml-1">Nurillaevich </span>
         </Link>

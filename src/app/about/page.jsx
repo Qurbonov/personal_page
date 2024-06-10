@@ -17,12 +17,6 @@ const AboutPage = () => {
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
   return (
-    // <motion.div
-    //   className="h-full"
-    //   initial={{ y: "-200vh" }}
-    //   animate={{ y: "0%" }}
-    //   transition={{ duration: 1 }}
-    // >
     <>
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
@@ -64,6 +58,7 @@ const AboutPage = () => {
             >
               SKILLS
             </motion.h1>
+
             {/* SKILL LIST */}
             <motion.div
               initial={{ x: "-300px" }}

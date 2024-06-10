@@ -4,12 +4,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
-
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { SiInstagram, SiFacebook, SiGithub, SiLinkedin } from "react-icons/si";
 const links = [
-  { url: "/", title: "main" },
-  { url: "/about", title: "thoughts" },
-  { url: "/portfolio", title: "portfolio" },
-  { url: "/contact", title: "contact" },
+  // { url: "/", title: "Main" },
+  // { url: "/about", title: "thoughts" },
+  // { url: "/portfolio", title: "portfolio" },
+  // { url: "/contact", title: "contact" },
 ];
 
 const Navbar = () => {
@@ -67,45 +68,34 @@ const Navbar = () => {
     },
   };
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl text-gray-700">
+    <div className="h-full">
       {/* LINKS */}
-      <div className="hidden md:flex gap-4 w-1/3 text-sky-100 justify-center">
+      {/* <div className="hidden md:flex gap-4 w-1/3 text-sky-100 justify-center">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
-      </div>
+      </div> */}
       {/* LOGO */}
-      <div className="md:hidden lg:flex  justify-center">
+      <div className=" flex justify-center items-center lg:flex lg:justify-center pt-4 mb-3 lg:mb-0 tracking-wide">
         <Link
           href="/"
-          className="text-sm bg-sky-800 rounded-md p-3 font-semibold tracking-widestk"
+          className="lg:text-sm md:text-xl text-base p-3 font-semibold border-b"
         >
-          <span className="text-white mr-1">Qurbonov </span>
-          <span className="w-12 h-8 rounded bg-white text-black mr-1 p-1">
+          <span className="text-white">Qurbonov</span>
+          <span className="rounded-lg bg-white text-indigo-900 mx-4 p-2">
             Po&apos;latjon
           </span>
-          <span className="text-white ml-1">Nurillaevich </span>
+          <span className="text-white">Nurillayevich</span>
         </Link>
       </div>
-      {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 w-1/3 justify-center">
-        <Link href="/" className="bg-slate-50 p-2 rounded-full">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/" className="bg-slate-50 p-2 rounded-full">
-          <Image src="/github.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/" className="bg-slate-50 p-2 rounded-full">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/" className="bg-slate-50 p-2 rounded-full">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-      </div>
+      {/* SOCIAL 
+      md:flex gap-4 w-1/3 justify-center
+      */}
+      {/*  */}
       {/* RESPONSIVE MENU */}
-      <div className="md:hidden">
-        {/* MENU BUTTON */}
-        <button
+      {/* <div className="md:hidden"> */}
+      {/* MENU BUTTON */}
+      {/* <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
           onClick={() => setOpen((prev) => !prev)}
         >
@@ -126,7 +116,7 @@ const Navbar = () => {
           ></motion.div>
         </button>
         {/* MENU LIST */}
-        {open && (
+      {/* {open && (
           <motion.div
             variants={listVariants}
             initial="closed"
@@ -142,9 +132,9 @@ const Navbar = () => {
                 <Link href={link.url}>{link.title}</Link>
               </motion.div>
             ))}
-          </motion.div>
-        )}
-      </div>
+          </motion.div> */}
+      {/* )}
+      </div>  */}
     </div>
   );
 };

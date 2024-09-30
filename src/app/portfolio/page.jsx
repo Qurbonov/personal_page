@@ -15,7 +15,7 @@ const Portfolio = () => {
           <b>Project.</b>
         </div>
         <p className="mb-4">
-          <span className="text-blue-400">Uqituvchi.uz</span>, for teachers and
+          <span className="text-green-500">Uqituvchi.uz</span>, for teachers and
           puples online teaching platform, was created in the pandemic days.
         </p>
         <Image

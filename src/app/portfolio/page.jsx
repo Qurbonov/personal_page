@@ -127,7 +127,6 @@ const Portfolio = () => {
                 className="block h-full w-full rounded-lg object-cover object-center"
                 alt="gallery"
                 priority={true}
-                alt=""
               />
               {/* <img
                 className="block h-full w-full rounded-lg object-cover object-center"

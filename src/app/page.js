@@ -9,9 +9,9 @@ import { SiInstagram, SiFacebook, SiGithub, SiLinkedin } from "react-icons/si";
 
 const Home = () => {
   return (
-    <>
+    <div className="h-screen mt-14">
       {/* <MotionTest /> */}
-      <div className="w-full flex items-center justify-center h-full">
+      <div className="w-full flex items-center justify-center">
         <div className="w-9/12 flex flex-col gap-1 lg:flex-row sm:flex-col md:flex-col ">
           <div className="w-full relative">
             <motion.div
@@ -72,26 +72,24 @@ const Home = () => {
                 href="https://www.linkedin.com/in/qurbonovp/"
                 legacyBehavior
               >
-                <a target="_blank">
-                  <SiLinkedin size={20} />
+                <a target="_blank" className="hover:text-blue-500">
+                  <SiLinkedin size={25} />
                 </a>
                 {/* <Image src="/linkedin.png" alt="" width={24} height={24} /> */}
               </Link>
               <Link href="https://github.com/Qurbonov" legacyBehavior>
-                <a target="_blank">
-                  <SiGithub size={20} />
+                <a target="_blank" className="hover:text-black">
+                  <SiGithub size={25} />
                 </a>
                 {/* <Image src="/github.png" alt="" width={24} height={24} /> */}
               </Link>
-              {/* <Link
-                href="https://www.instagram.com/polatjonnurillaevich/"
-                legacyBehavior
-              >
-                <a target="_blank">
-                  <SiInstagram size={20} />
-                </a> */}
-              {/* <Image src="/instagram.png" alt="" width={24} height={24} /> */}
-              {/* </Link> */}
+              <Link href="/portfolio" legacyBehavior>
+                <a className="hover:text-green-500">
+                  {/* <SiInstagram size={20} />  */}
+                  Certificates and project!
+                </a>
+                {/* <Image src="/instagram.png" alt="" width={24} height={24} /> */}
+              </Link>
               {/* <Link href="https://www.facebook.com/qurbonovp" legacyBehavior>
                 {/* <FaFacebookF size="20" /> */}
               {/* <a target="_blank">
@@ -103,7 +101,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
